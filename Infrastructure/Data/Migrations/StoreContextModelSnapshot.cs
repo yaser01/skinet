@@ -83,13 +83,13 @@ namespace Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Core.Entites.Product", b =>
                 {
-                    b.HasOne("Core.Entites.ProductBrand", "PrductBrand")
+                    b.HasOne("Core.Entites.ProductBrand", "ProductBrand")
                         .WithMany()
                         .HasForeignKey("ProductBrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Core.Entites.ProductType", "PrductType")
+                    b.HasOne("Core.Entites.ProductType", "ProductType")
                         .WithMany()
                         .HasForeignKey("ProductTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
